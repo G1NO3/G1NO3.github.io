@@ -138,4 +138,6 @@ awards:
 
 ## About Me
 
-Jiyi Wang is a research assistant at BRAINML lab in Georgia Tech. His research interests are NeuroAI. On the AI side, he is interested in developing cog-inspired reinforcement learning (RL) models. On the neuroscience side, he is interested in the mechanism how hippocampus could help learning, memory and generalization. 
+I am a research assistant at the BRAINML Lab at Georgia Tech, where I work at the intersection of neuroscience and AI. On the AI side, I develop cognitive-inspired reinforcement-learning models; on the neuroscience side, I study how the hippocampus supports learning, memory, and generalization.
+
+I earned my BSc from Peking University, where I initially explored AI applications in science before focusing exclusively on NeuroAI after a year of exploration.

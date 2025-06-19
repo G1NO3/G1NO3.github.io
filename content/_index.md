@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I'm a research assistant in Georgia Tech. I apply quantitative methods to investigate the connections between carbon intelligence and silicon intelligence.
+        I apply quantitative methods to investigate the connections between carbon intelligence and silicon intelligence.
 
     design:
       columns: '1'
