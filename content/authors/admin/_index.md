@@ -108,6 +108,10 @@ skills:
 awards:
   - title: National Scholarship
     date: '2021-04-01'
+  - title: Samsung Scholarship
+    date: '2022-04-01'
+  - title: Shisun Ding Scholarship
+    date: '2024-04-01'
   #   awarder: Coursera
   #   icon: coursera
   #   summary: |
