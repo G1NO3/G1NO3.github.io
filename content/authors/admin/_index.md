@@ -49,8 +49,8 @@ interests:
 education:
   - area: BSc
     institution: Peking University
-    date_start: 2020-09
-    date_end: 2024-07
+    date_start: 2020-09-01
+    date_end: 2024-07-02
     summary: |
       GPA: 3.70/4.00
 
