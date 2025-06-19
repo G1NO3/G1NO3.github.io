@@ -138,6 +138,6 @@ awards:
 
 ## About Me
 
-I am a research assistant at the BRAINML Lab at Georgia Tech, where I work at the intersection of neuroscience and AI. On the AI side, I develop cognitive-inspired reinforcement-learning models; on the neuroscience side, I study how the hippocampus supports learning, memory, and generalization.
+I am a research assistant at the BRAINML Lab at Georgia Tech. I am interested in the intersection of neuroscience and AI (NeuroAI). On the AI side, I develop cognitive-inspired reinforcement-learning models; on the neuroscience side, I study how the hippocampus supports learning, memory, and generalization.
 
-I earned my BSc from Peking University, where I initially explored AI applications in science before focusing exclusively on NeuroAI after a year of exploration.
+Previously, I earned my BSc from Peking University. At that time I was exploring AI applications in science before focusing exclusively on NeuroAI after a year of exploration.
