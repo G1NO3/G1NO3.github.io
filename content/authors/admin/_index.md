@@ -107,7 +107,7 @@ skills:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: National Scholarship
-    date: '2021'
+    date: '2021-04-01'
   #   awarder: Coursera
   #   icon: coursera
   #   summary: |
