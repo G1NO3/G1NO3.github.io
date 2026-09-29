@@ -1,0 +1,31 @@
+{{ define "main" }}
+<main id="main-content" class="research-site publication-detail">
+  <a class="back-link" href="{{ "publication/" | relURL }}">← All publications</a>
+  <header class="publication-header">
+    <p class="eyebrow">{{ .Params.publication_short }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ partial "research/authors.html" . }}
+    <p class="publication-venue">{{ .Params.publication | markdownify }}</p>
+    <p class="detail-summary">{{ .Params.summary }}</p>
+    <div class="paper-links">
+      {{ with .Params.url_pdf }}<a href="{{ . }}">Read paper ↗</a>{{ end }}
+      {{ with .Params.url_code }}<a href="{{ . }}">Code ↗</a>{{ end }}
+      {{ range .Params.links }}<a href="{{ .url }}">{{ .name }} ↗</a>{{ end }}
+      {{ with .Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}" download>Download BibTeX</a>{{ end }}
+    </div>
+  </header>
+  <div class="research-prose">
+    {{ with .Params.teaser }}
+      {{ $teaser := . }}
+      {{ with $.Resources.GetMatch .image }}
+        <figure class="paper-teaser">
+          <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $teaser.alt }}" decoding="async">
+          <figcaption><p>{{ $teaser.caption }}</p></figcaption>
+        </figure>
+      {{ end }}
+    {{ end }}
+    {{ .Content }}
+  </div>
+  <div class="detail-contact"><p>Interested in this research?</p><a href="mailto:jwang3617@gatech.edu">Get in touch ↗</a></div>
+</main>
+{{ end }}

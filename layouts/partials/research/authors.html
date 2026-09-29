@@ -1,0 +1,14 @@
+<p class="paper-authors">
+  {{- with .Params.authorship -}}
+    <strong>{{ . }}</strong>
+  {{- else -}}
+    {{- range $index, $author := .Params.authors -}}
+      {{- if $index }}, {{ end -}}
+      {{- if or (eq $author "admin") (eq $author "Jiyi Wang") -}}
+        <strong>Jiyi Wang</strong>
+      {{- else -}}
+        {{- $author -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+</p>

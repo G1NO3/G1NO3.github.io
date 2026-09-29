@@ -1,0 +1,24 @@
+{{ $compact := .compact | default false }}
+{{ with .page }}
+<article class="paper-row{{ if $compact }} paper-compact{{ end }}">
+  <div class="paper-label">
+    <span class="venue">{{ .Params.publication_short | default (.Date.Format "2006") }}</span>
+    {{ if not $compact }}
+      {{ with .Params.method }}<span class="method">{{ . }}</span>{{ end }}
+      {{ with .Params.research_focus }}<span class="paper-focus">{{ . }}</span>{{ end }}
+    {{ end }}
+  </div>
+  <div class="paper-content">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ partial "research/authors.html" . }}
+    {{ if not $compact }}<p class="paper-summary">{{ .Params.summary }}</p>{{ end }}
+    <div class="paper-links">
+      <a href="{{ .RelPermalink }}">Research overview <span aria-hidden="true">↗</span></a>
+      {{ with .Params.url_pdf }}<a href="{{ . }}">PDF <span aria-hidden="true">↗</span></a>{{ end }}
+      {{ with .Params.url_code }}<a href="{{ . }}">Code <span aria-hidden="true">↗</span></a>{{ end }}
+      {{ range .Params.links }}<a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a>{{ end }}
+      {{ with .Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}" download>Cite</a>{{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

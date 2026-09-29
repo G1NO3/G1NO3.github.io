@@ -24,10 +24,13 @@ sections:
       username: admin
     design:
       show_skill_percentage: false
-  - block: resume-awards
+  - block: markdown
     content:
-      title: Awards
-      username: admin
+      title: Selected Awards
+      text: |
+        **National Scholarship** (2/165) · **Samsung Scholarship** (20/160) · **National Chemistry Olympiad Silver Medal**
+    design:
+      columns: '1'
   # - block: resume-languages
   #   content:
   #     title: Languages

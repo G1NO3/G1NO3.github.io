@@ -1,51 +1,59 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Jiyi Wang — research website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+Personal academic website for robot learning, embodied AI, and NeuroAI, built with Hugo Blox and deployed to GitHub Pages.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## Local preview
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+Use **Hugo Extended 0.136.5** (the version pinned in `.github/workflows/publish.yaml`) and Go 1.19 or newer:
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+```sh
+hugo server
+```
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+For a production build:
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+```sh
+hugo --minify
+```
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+The deployment workflow builds and publishes the site when changes are pushed to `main`.
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## Content and layout
 
-## We ask you, humbly, to support this open source movement
+- `content/authors/admin/_index.md`: biography, education, experience, and skills.
+- `layouts/landing/research-home.html`: homepage layout (bio, videos, compact publications, and contact).
+- `content/publication/*/index.md`: publication metadata and research overviews.
+- `layouts/partials/research/`: shared publication and author presentation.
+- `layouts/publication/`: publication archive and detail pages.
+- `assets/css/custom.css`: responsive styles, dark mode, and print styling.
+- `static/uploads/resume.pdf`: downloadable CV, updated from `ref/CV (7).pdf`.
+- `content/_index.md`: editable homepage bio, research description, headings, contact line, and robot demo details.
+- `static/videos/`: web-ready robot demonstrations and extracted poster frames. Originals remain in `ref/`.
+- `config/_default/menus.yaml`: navigation.
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+Set `featured: true` on a publication to show it on the homepage. Its `weight` controls the order. Add verified `url_pdf`, `url_code`, and `links` fields to expose paper and code resources. Complete author lists use `admin` for Jiyi Wang, which highlights the name automatically.
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+Template blog posts, teaching examples, events, and example projects remain in the repository as drafts and are excluded from production builds.
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+## Robot demonstration videos
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+The homepage's `robot_demos` entries are rendered below the current robotics project. Each video has a poster, native playback controls, an inline mobile player, and a direct MP4 link. Playback starts muted on user interaction; `preload="none"` avoids downloading the videos on initial page load.
 
-## Demo image credits
+The MP4s in `static/videos/` are H.264/YUV420p encodes at the original 1906 × 1080 resolution, with original audio retained and MP4 fast-start enabled. JPEG posters are extracted from the recordings. Update the media files and corresponding `content/_index.md` entries together when replacing a demonstration.
 
-- [Unsplash](https://unsplash.com)
+## Publication metadata to complete
 
-## Latest news
+The two NeurIPS 2026 papers are marked accepted based on the author's confirmation and current CV. The supplied PDFs are anonymous review versions. Their research descriptions are included, but those files are not published as downloadable manuscripts.
 
-<!--START_SECTION:news-->
-* [6 Compelling Reasons I Switched from WordPress to Hugo](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;wordpress&#x2F;)
-* [The 7 best landing page builders in 2024](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;7-best-landing-page-builders&#x2F;)
-* [Start a Blog and Make Money in 2024: Here&#39;s What You Need to Know](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;start-a-blog-and-make-money&#x2F;)
-* [Hugo vs Quarto: Which One is Better for 2024?](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;quarto&#x2F;)
-* [Easily make an academic CV website to get more cites and grow your audience 🚀](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;easily-make-academic-website&#x2F;)
-<!--END_SECTION:news-->
+The author confirmed the complete author lists for both papers on September 28, 2026. Both pages now display all authors in order, highlight Jiyi Wang, and provide downloadable BibTeX citations:
+
+- `content/publication/wang-2026-motor-motifs/index.md`
+- `content/publication/wang-2026-dales-principle/index.md`
+
+The citations are synchronized with `publications.bib` and marked accepted. Public paper/code links and final proceedings metadata remain to be added when available. The two older preprints have been removed from the website and bibliography; their source pages and citations are preserved in `ignore/preprints/` outside the published content tree.
+
+All three publication pages use the same structure: a teaser figure, a short overview, method, experimental findings, and research connection. Each teaser is extracted from Figure 1 of the corresponding manuscript. Edit its `teaser.image`, `teaser.alt`, and `teaser.caption` fields in the publication's `index.md`; the image lives in that paper's folder.
+
+The ICML 2025 record includes the supplied SWIRL PDF (`content/publication/ke-2025-inverse/paper.pdf`) and links to the official PMLR proceedings and public code. Quantitative robotics results and technical skills follow the supplied CV. Human-motion transfer is described as a research interest, not an existing experimental result.
+
+The `ref/` source folder and generated build outputs are ignored by Git.

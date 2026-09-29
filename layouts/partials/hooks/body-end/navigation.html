@@ -1,0 +1,10 @@
+<script>
+  // Close the mobile menu before following an in-page link.
+  const siteMenu = document.getElementById('nav-menu');
+  const siteMenuToggle = document.getElementById('nav-toggle');
+  if (siteMenu && siteMenuToggle) {
+    siteMenu.addEventListener('click', (event) => {
+      if (event.target.closest('a')) siteMenuToggle.checked = false;
+    });
+  }
+</script>

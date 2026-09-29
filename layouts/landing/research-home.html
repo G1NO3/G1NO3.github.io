@@ -1,0 +1,64 @@
+{{ define "main" }}
+{{ $profile := site.GetPage "/authors/admin" }}
+<main id="main-content" class="research-site home-simple">
+  <section id="about" class="profile-hero" aria-labelledby="profile-title">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ .Params.introduction.role }}</p>
+      <h1 id="profile-title">{{ $profile.Title }}<span class="name-period">.</span></h1>
+      <div class="hero-description">{{ .Params.introduction.bio | markdownify }}</div>
+      <div class="hero-actions">
+        <a class="action-primary" href="{{ "uploads/resume.pdf" | relURL }}">Download CV <span aria-hidden="true">↗</span></a>
+        <a class="action-secondary" href="mailto:{{ .Params.contact.email }}">Email <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="profile-links">
+        <a href="https://scholar.google.com/citations?user=BNIkDQoAAAAJ">Google Scholar ↗</a>
+        <a href="https://github.com/G1NO3">GitHub ↗</a>
+      </div>
+    </div>
+    <aside class="hero-portrait" aria-label="Profile photo">
+      {{ with $profile.Resources.GetMatch "avatar.*" }}
+      {{ $portrait := .Resize "640x webp" }}
+      <img src="{{ $portrait.RelPermalink }}" width="{{ $portrait.Width }}" height="{{ $portrait.Height }}" alt="Jiyi Wang holding a Rubik’s Cube" fetchpriority="high">
+      {{ end }}
+    </aside>
+  </section>
+
+  <section id="research" class="research-section" aria-labelledby="robot-demos-title">
+    <div id="robot-demos">
+      <h2 id="robot-demos-title">{{ .Params.research.title }}</h2>
+      <p class="section-intro">{{ .Params.research.description | markdownify }}</p>
+      <div class="demo-grid">
+        {{ range .Params.robot_demos }}
+        <figure class="demo-card">
+          <video controls playsinline muted preload="none"
+                 width="1906" height="1080"
+                 poster="{{ .poster | relURL }}"
+                 aria-labelledby="{{ .id }}-title"
+                 aria-describedby="{{ .id }}-description">
+            <source src="{{ .video | relURL }}" type="video/mp4">
+            Your browser does not support embedded video. <a href="{{ .video | relURL }}">Watch the MP4</a>.
+          </video>
+          <figcaption>
+            <div class="demo-title"><h3 id="{{ .id }}-title">{{ .title }}</h3><span>{{ .duration }}</span></div>
+            <p id="{{ .id }}-description">{{ .description }}</p>
+            <a class="inline-link" href="{{ .video | relURL }}">Open video ↗</a>
+          </figcaption>
+        </figure>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section id="papers" class="research-section" aria-labelledby="papers-title">
+    <h2 id="papers-title">{{ .Params.publications_heading }}</h2>
+    {{ range (where (where site.RegularPages "Section" "publication") "Params.featured" true).ByWeight }}
+      {{ partial "research/paper.html" (dict "page" . "compact" true) }}
+    {{ end }}
+    <a class="all-publications" href="{{ "publication/" | relURL }}">All publications <span aria-hidden="true">→</span></a>
+  </section>
+
+  <section id="contact" class="contact-line" aria-label="Contact">
+    <p>{{ .Params.contact.text }} <a href="mailto:{{ .Params.contact.email }}">{{ .Params.contact.email }}</a></p>
+  </section>
+</main>
+{{ end }}

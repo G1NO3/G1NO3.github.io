@@ -1,143 +1,87 @@
 ---
-# Display name
 title: Jiyi Wang
-
-# Name pronunciation (optional)
-name_pronunciation: 
-
-# Full name (for SEO)
 first_name: Jiyi
 last_name: Wang
-
-# Status emoji
-status:
-  icon: 
-
-# Is this the primary user of the site?
 superuser: true
-
-# Highlight the author in author lists? (true/false)
 highlight_name: true
-
-# Role/position/tagline
-role: Research Assistant
-
-# Organizations/Affiliations to display in Biography blox
-organizations: 
-  - name: BRAINML Lab, Georgia Institute of Technology
-    url: https://sites.google.com/view/brainml/home
-
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+role: PhD Student · Robot Learning & Embodied AI
+organizations:
+  - name: Georgia Institute of Technology
+    url: https://www.gatech.edu/
 profiles:
   - icon: at-symbol
-    url: 'geertswon@gmail.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/GeertNO3
+    url: mailto:jwang3617@gatech.edu
+    label: Email
   - icon: brands/github
     url: https://github.com/G1NO3
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?hl=zh-CN&user=BNIkDQoAAAAJ
-
-
+    url: https://scholar.google.com/citations?user=BNIkDQoAAAAJ
+  - icon: brands/x
+    url: https://x.com/GeertNO3
 interests:
-  - NeuroAI
-  - Reinforcement Learning
-  - Hippocampus
-
+  - Robot learning from demonstrations and human feedback
+  - Vision-language-action models & dexterous manipulation
+  - Reusable motor skills & inverse reinforcement learning
+  - Brain-inspired learning and control
 education:
-  - area: BSc
+  - area: PhD in Computer Science and Engineering
+    institution: Georgia Institute of Technology
+    date_start: 2026-05-01
+    date_end: ''
+    summary: 'GPA: 4.0/4.0'
+  - area: BS in Chemistry
     institution: Peking University
     date_start: 2020-09-01
-    date_end: 2024-07-02
-    summary: |
-      GPA: 3.70/4.00
-
+    date_end: 2024-07-01
+    summary: 'GPA: 3.70/4.00'
 work:
-  - position: Research Assistant
-    company_name: BRAINML Lab, Georgia Institute of Technology
-    company_url: 'https://sites.google.com/view/brainml/home'
-    company_logo: ''
-    date_start: 2024-08-21
+  - position: 'Research Assistant · Human-in-the-Loop VLA Learning'
+    company_name: Georgia Institute of Technology
+    company_url: https://www.gatech.edu/
+    date_start: 2026-05-01
+    date_end: ''
     summary: |
-      Developed an inverse reinforcement learning algorithm with linear decomposition of the environment to find out the skill sets that act as the basis functions of animal behaviors. Used the trajectory data and recover the reward function efficiently and locate a series of skill sets. 
+      Supervised by Dr. Ye Zhao. Develop learning and control pipelines for dexterous clinical robotic manipulation, including high-precision pipetting.
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
+      - Fine-tune GR00T, QwenOFT, and π0.5 policies with supervised fine-tuning and online actor–critic reinforcement learning with human intervention.
+      - Improved real-robot millimeter-level task success from **10% to 85%** through iterative hardware reinforcement learning.
+  - position: 'Research Assistant · E/I-Separated Recurrent Neural Networks'
+    company_name: Shanghai Qizhi Institute
+    date_start: 2025-07-01
+    date_end: 2026-05-01
+    summary: |
+      Supervised by Dr. Lu Mi. Investigated Dale's principle as an inductive bias for recurrent networks, with experiments in multi-task learning, continual learning, and reinforcement learning.
+
+      First-author paper accepted to **NeurIPS 2026**.
+  - position: 'Research Assistant · Inverse Reinforcement Learning'
+    company_name: BRAINML Lab, Georgia Institute of Technology
+    company_url: https://sites.google.com/view/brainml/home
+    date_start: 2024-08-01
+    date_end: 2025-06-01
+    summary: |
+      Supervised by Dr. Anqi Wu. Developed a framework to discover reusable motor motifs and recover reward structure from behavioral trajectories. Applied expectation–maximization to multi-reward MDPs to infer latent behavioral intentions.
+
+      First-author work on reusable motor motifs accepted to **NeurIPS 2026**; co-authored **ICML 2025** work on switching, history-dependent rewards.
+  - position: 'Research Assistant · Reinforcement Learning Models of Replay'
+    company_name: Tsinghua University & New York University
+    date_start: 2023-05-01
+    date_end: 2025-07-01
+    summary: |
+      Supervised by Dr. Sen Song and Dr. Marcelo Mattar. Built a modular reinforcement learning model in JAX to study replay, planning, and cognitive-map learning. Analyzed neural manifolds and reproduced biological replay experiments.
 skills:
-  - name: Technical Skills
+  - name: Learning & Control
     items:
-      - name: 'Languages: Python, C, C++'
-        description: ''
-        percent: 100
-        icon: code-bracket
-      - name: 'Deep learning framework: PyTorch, JAX'
-        description: ''
-        percent: 100
-        icon: code-bracket
-  # - name: Hobbies
-  #   color: '#eeac02'
-  #   color_border: '#f0bf23'
-  #   items:
-  #     - name: Music
-  #       description: ''
-  #       percent: 100
-  #       icon: person-simple-walk
-  #     - name: Movie
-  #       description: ''
-  #       percent: 100
-  #       icon: cat
-  #     - name: Photography
-  #       description: ''
-  #       percent: 80
-  #       icon: camera
-
-# languages:
-#   - name: English
-#     percent: 100
-#   - name: Chinese
-#     percent: 75
-#   - name: Portuguese
-#     percent: 25
-
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: National Scholarship
-    date: '2021-04-01'
-  - title: Samsung Scholarship
-    date: '2022-04-01'
-  - title: Shisun Ding Scholarship
-    date: '2024-04-01'
-  #   awarder: Coursera
-  #   icon: coursera
-  #   summary: |
-  #     I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  # - title: Blockchain Fundamentals
-  #   url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-  #   date: '2023-07-01'
-  #   awarder: edX
-  #   icon: edx
-  #   summary: |
-  #     Learned:
-  #     - Synthesize your own blockchain solutions
-  #     - Gain an in-depth understanding of the specific mechanics of Bitcoin
-  #     - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  # - title: 'Object-Oriented Programming in R'
-  #   url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-  #   certificate_url: https://www.datacamp.com
-  #   date: '2023-01-21'
-  #   awarder: datacamp
-  #   icon: datacamp
-  #   summary: |
-  #     Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      - name: VLA fine-tuning, imitation learning & behavior cloning
+      - name: Actor–critic RL, human-in-the-loop RL & inverse RL
+      - name: Dexterous manipulation, humanoid control & world models
+  - name: Engineering
+    items:
+      - name: Python, PyTorch, JAX, C & C++
+      - name: NVIDIA GR00T, QwenOFT, π0.5 & StarVLA
+      - name: Isaac Sim / PhysX, MuJoCo & Unitree G1
+      - name: Codex & Claude CLI for research development
 ---
 
-## About Me
+I am a PhD student at **Georgia Tech**, working on **robot learning and embodied AI**. My research connects learning from behavioral data with learning through interaction: discovering reusable motor skills, adapting vision-language-action policies, and improving real-world control with human feedback.
 
-I am a research assistant at the BRAINML Lab at Georgia Tech. I am interested in the intersection of neuroscience and AI (NeuroAI). On the AI side, I develop cognitive-inspired reinforcement-learning models; on the neuroscience side, I study how the hippocampus supports learning, memory, and generalization.
-
-Previously, I earned my BSc from Peking University. At that time I was exploring AI applications in science before focusing exclusively on NeuroAI after a year of exploration.
+I currently work with **Dr. Ye Zhao** on human-in-the-loop VLA learning for dexterous manipulation. Previously, I studied inverse reinforcement learning with Dr. Anqi Wu, brain-inspired recurrent networks with Dr. Lu Mi, and reinforcement learning models of replay with Dr. Sen Song and Dr. Marcelo Mattar. I received my BS in Chemistry from **Peking University**.

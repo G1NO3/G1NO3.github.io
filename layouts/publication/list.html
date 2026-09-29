@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main id="main-content" class="research-site publication-list">
+  <p class="eyebrow">Research output</p>
+  <h1>Publications</h1>
+  <p class="section-intro">Robot learning, reusable motor skills, and brain-inspired learning. My name is highlighted in the author lists.</p>
+  {{ range .RegularPages.ByWeight }}{{ partial "research/paper.html" (dict "page" .) }}{{ end }}
+</main>
+{{ end }}

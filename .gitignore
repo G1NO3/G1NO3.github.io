@@ -1,0 +1,6 @@
+/public/
+/resources/
+/.hugo_build.lock
+/hugo_stats.json
+# Source CV and anonymous review manuscripts are local reference material.
+/ref/
