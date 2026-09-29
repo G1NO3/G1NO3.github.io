@@ -17,7 +17,6 @@
       {{ with .Params.url_pdf }}<a href="{{ . }}">PDF <span aria-hidden="true">↗</span></a>{{ end }}
       {{ with .Params.url_code }}<a href="{{ . }}">Code <span aria-hidden="true">↗</span></a>{{ end }}
       {{ range .Params.links }}<a href="{{ .url }}">{{ .name }} <span aria-hidden="true">↗</span></a>{{ end }}
-      {{ with .Resources.GetMatch "cite.bib" }}<a href="{{ .RelPermalink }}" download>Cite</a>{{ end }}
     </div>
   </div>
 </article>

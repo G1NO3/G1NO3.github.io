@@ -45,12 +45,12 @@ The MP4s in `static/videos/` are H.264/YUV420p encodes at the original 1906 × 1
 
 The two NeurIPS 2026 papers are marked accepted based on the author's confirmation and current CV. The supplied PDFs are anonymous review versions. Their research descriptions are included, but those files are not published as downloadable manuscripts.
 
-The author confirmed the complete author lists for both papers on September 28, 2026. Both pages now display all authors in order, highlight Jiyi Wang, and provide downloadable BibTeX citations:
+The author confirmed the complete author lists for both papers on September 28, 2026. Both pages display all authors in order and highlight Jiyi Wang:
 
 - `content/publication/wang-2026-motor-motifs/index.md`
 - `content/publication/wang-2026-dales-principle/index.md`
 
-The citations are synchronized with `publications.bib` and marked accepted. Public paper/code links and final proceedings metadata remain to be added when available. The two older preprints have been removed from the website and bibliography; their source pages and citations are preserved in `ignore/preprints/` outside the published content tree.
+Citation download links are hidden for all three papers while the NeurIPS results are not yet public. The underlying citations are retained, synchronized with `publications.bib`, and marked accepted where applicable. Public paper/code links and final proceedings metadata remain to be added when available. The two older preprints have been removed from the website and bibliography; their source pages and citations are preserved in `ignore/preprints/` outside the published content tree.
 
 All three publication pages use the same structure: a teaser figure, a short overview, method, experimental findings, and research connection. Each teaser is extracted from Figure 1 of the corresponding manuscript. Edit its `teaser.image`, `teaser.alt`, and `teaser.caption` fields in the publication's `index.md`; the image lives in that paper's folder.
 
