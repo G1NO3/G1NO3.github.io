@@ -12,7 +12,8 @@ authors:
   - Yujia Zhao
   - Jingzhao Zhang
   - Lu Mi
-# Add public paper/code links when available.
+url_pdf: https://arxiv.org/abs/2610.34052
+url_code: https://github.com/NeuroAIHub/EISep
 summary: 'Learnable excitatory–inhibitory separation improves recurrent learning stability, continual learning, and reinforcement learning control.'
 tags: [Reinforcement Learning, Continual Learning, NeuroAI]
 method: EISep
