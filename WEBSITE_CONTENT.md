@@ -182,7 +182,7 @@ Authors: **Jiyi Wang**, Jingyang Ke, Bo Dai, Anqi Wu
 
 Summary: Discovering reusable motor motifs from offline behavior data and composing them into continuous, interpretable policies.
 
-Paper: https://arxiv.org/abs/2506.15190. Code link: not yet added.
+Paper: https://arxiv.org/abs/2506.15190. Code: https://github.com/G1NO3/MCD.
 
 ![Side grooming illustrated as a combination of a grooming motif and a turning-side motif.](content/publication/wang-2026-motor-motifs/motor-motifs-teaser.png)
 

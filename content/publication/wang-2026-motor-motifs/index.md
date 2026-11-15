@@ -12,6 +12,7 @@ authors:
   - Bo Dai
   - Anqi Wu
 url_pdf: https://arxiv.org/abs/2506.15190
+url_code: https://github.com/G1NO3/MCD
 summary: 'Discovering reusable motor motifs from offline behavior data and composing them into continuous, interpretable policies.'
 tags: [Imitation Learning, Skill Discovery, Behavior Modeling]
 method: MCD
