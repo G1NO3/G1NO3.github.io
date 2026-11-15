@@ -67,7 +67,7 @@ Pipette alignment while a person moves the tip rack during execution.
 
 ## Selected publications
 
-### Learning Reusable Motor Motifs for Continuous Animal Behavior Modeling
+### Learning Reusable Behavioral Motifs for Continuous Animal Behavior Modeling
 
 NeurIPS 2026
 
@@ -172,7 +172,7 @@ The archive contains three conference papers. Their individual pages share a tea
 
 To edit a figure, update the `teaser.image`, `teaser.alt`, and `teaser.caption` fields in that paper's source file. Image files live alongside the paper's `index.md`. The figures below are extracted from Figure 1 of each supplied manuscript.
 
-## Learning Reusable Motor Motifs for Continuous Animal Behavior Modeling
+## Learning Reusable Behavioral Motifs for Continuous Animal Behavior Modeling
 
 Source: [Edit this paper](content/publication/wang-2026-motor-motifs/index.md)
 
@@ -182,7 +182,7 @@ Authors: **Jiyi Wang**, Jingyang Ke, Bo Dai, Anqi Wu
 
 Summary: Discovering reusable motor motifs from offline behavior data and composing them into continuous, interpretable policies.
 
-Public PDF and code links: not yet added.
+Paper: https://arxiv.org/abs/2506.15190. Code link: not yet added.
 
 ![Side grooming illustrated as a combination of a grooming motif and a turning-side motif.](content/publication/wang-2026-motor-motifs/motor-motifs-teaser.png)
 

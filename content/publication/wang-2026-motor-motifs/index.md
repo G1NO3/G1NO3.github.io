@@ -1,5 +1,5 @@
 ---
-title: Learning Reusable Motor Motifs for Continuous Animal Behavior Modeling
+title: Learning Reusable Behavioral Motifs for Continuous Animal Behavior Modeling
 date: 2026-09-27
 publication_types: [paper-conference]
 publication: 'NeurIPS 2026 · Accepted'
@@ -11,7 +11,7 @@ authors:
   - Jingyang Ke
   - Bo Dai
   - Anqi Wu
-# Add public paper/code links when available.
+url_pdf: https://arxiv.org/abs/2506.15190
 summary: 'Discovering reusable motor motifs from offline behavior data and composing them into continuous, interpretable policies.'
 tags: [Imitation Learning, Skill Discovery, Behavior Modeling]
 method: MCD
